@@ -1,0 +1,11 @@
+{% for obj in object_list %}
+
+  <p>{{ obj.content }}</p><br/>
+  <p>Tweet from: {{ obj.user }}</p><br/>
+  <p>{{ obj.timestamp|timesince}}</p>
+
+
+{% endfor %}
+
+
+<h1>tweet list file</h1>
